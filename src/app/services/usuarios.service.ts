@@ -19,7 +19,7 @@ export class UsuariosService {
       'token-usuario': 'ABCSFAFDGRWWE#$F%$%434r3f4'
     });
 
-    return this.http.get('https://reqrxxes.in/api/user', { params, headers })
+    return this.http.get('https://reqres.in/api/user', { params, headers })
       .pipe(
         map( (res: any) => res.data ),
         catchError( this.manejarError )
